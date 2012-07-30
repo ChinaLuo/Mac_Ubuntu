@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=osx
+Encoding=UTF-8
+GtkTheme=osx
+MetacityTheme=osx
+IconTheme=leoicons
+ButtonLayout=close,minimize,maximize:
+CursorTheme=xcursor
+CursorSize=24

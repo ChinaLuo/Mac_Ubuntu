@@ -1,0 +1,178 @@
+# panel
+################################################
+style "panelbg"
+{
+  #font_name = "Lucida Grande Medium 10"
+
+  xthickness            	= 2
+  ythickness            	= 0
+
+  bg_pixmap[NORMAL]		= "Panel/panel-bg.png"
+}
+
+# class 		"*Panel*" 			style "panelbg"
+class 		"*Panel*Applet*" 		style "panelbg"
+class 		"*Mail*" 			style "panelbg"
+class 		"*notif*" 			style "panelbg"
+class 		"*Notif*" 			style "panelbg"
+class 		"*Tray*" 			style "panelbg"
+class 		"*tray*" 			style "panelbg"
+class 		"Xfce*Panel*" 			style "panelbg"
+
+widget 		"*TrayIcon*" 			style "panelbg"
+widget 		"*PanelWidget*" 		style "panelbg"
+widget 		"*PanelApplet*" 		style "panelbg"
+
+widget_class 	"*Panel*GtkToggleButton" 	style "panelbg"
+#widget_class 	"*Panel*GtkButton" 		style "panelbg"
+widget_class 	"*.Panel*Button*GtkLabel" 	style "panelbg"
+widget_class 	"*.Panel*GtkLabel" 		style "panelbg"
+widget_class 	"*Netstatus*" 			style "panelbg"
+widget_class 	"*Tomboy*Tray*" 		style "panelbg"
+widget_class 	"*Mail*" 			style "panelbg"
+widget_class 	"*notif*" 			style "panelbg"
+widget_class 	"*Notif*" 			style "panelbg"
+widget_class 	"*Tray*" 			style "panelbg"
+widget_class 	"*tray*" 			style "panelbg"
+widget_class 	"*PanelToplevel*" 		style "panelbg"
+widget_class 	"*Xfce*Panel*" 			style "panelbg"
+widget_class 	"*PanelApplet*" 		style "panelbg"
+widget_class 	"*PanelWidget*" 		style "panelbg"
+# widget_class 	"*Panel*" 			style "panelbg"
+
+
+############ panel buttons ################
+
+style "panelbuttons" = "default"
+{
+
+  #font_name = "Lucida Grande Medium 10"
+
+  fg[NORMAL]        		= "#000000"
+  fg[PRELIGHT]      		= "#ffffff"
+  fg[ACTIVE]        		= "#ffffff"
+  fg[SELECTED]      		= "#ffffff"
+ 
+  xthickness            	= 2
+  ythickness            	= 1
+
+  GtkWidget::focus_padding	= 2
+
+    engine "pixmap" 
+    {
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		state		= NORMAL
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}
+
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		state		= PRELIGHT
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}
+
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		shadow		= OUT
+		state		= PRELIGHT
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}
+		
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		shadow		= IN
+		state		= PRELIGHT
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}
+	
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		state		= ACTIVE
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}  
+
+	image
+	{
+		function        = BOX
+		recolorable     = TRUE
+		state		= INSENSITIVE
+		file            = "Panel/panel-bg.png"
+		border          = { 4, 4, 4, 4 }
+		stretch         = TRUE
+	}  
+    }
+}
+
+widget_class "*Panel*GtkToggleButton*" style "panelbuttons"
+
+########### panel arrow fix ############################
+
+style "panel-arrow"
+{
+    engine "pixmap"
+    {
+	image
+	{
+
+		function 	= ARROW
+     		recolorable 	= TRUE
+     		overlay_file 	= "Arrows/arrow-down-ins.png"
+     		overlay_border 	= { 2, 2, 2, 2 }
+     		overlay_stretch = FALSE
+     		arrow_direction = DOWN
+   	}
+    }
+}
+
+class "*Panel*" style "panel-arrow"
+
+#########################################
+
+style "panelhandle" 
+{
+    engine "pixmap"
+    {    
+        image
+        {
+		function 	= HANDLE
+        	file 		= "Others/focus-trans.png"
+            	border 		= { 0, 0, 0, 0 }
+            	stretch 	= TRUE
+            	orientation 	= VERTICAL
+        }    
+ 
+	image
+        {
+        	function 	= HANDLE
+            	file 		= "Others/focus-trans.png"
+            	border 		= { 0, 0, 0, 0 }
+            	stretch 	= TRUE
+            	orientation 	= HORIZONTAL
+        }
+    }
+}
+
+class "PanelAppletFrame" 	style "panelhandle"
+
+

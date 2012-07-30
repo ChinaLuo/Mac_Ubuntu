@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Macbuntu
+Type=X-GNOME-Metatheme
+Version=2.3
+Comment=Macbuntu based on GTK Leopard
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Macbuntu
+MetacityTheme=Macbuntu
+IconTheme=Macbuntu-Icons
+CursorTheme=Macbuntu-Cursors
+CursorSize=28
+NotificationTheme=ubuntu
+ButtonLayout=close,minimize,maximize:menu
+BackgroundImage=/usr/share/backgrounds/leopard-aurora.jpg

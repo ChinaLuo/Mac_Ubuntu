@@ -1,0 +1,127 @@
+########## thunar tweaks ############
+
+style "shadows2" = "default"
+{
+
+  bg[NORMAL]	   		= "#b2b2b2"
+
+  GtkWidget::focus_padding 	= 0
+
+  xthickness = 0
+  ythickness = 0
+
+    engine "pixmap"
+    {
+    	image
+    	{
+      		function	= SHADOW
+      		shadow		= IN
+      		recolorable	= FALSE
+      		file		= "Shadows/shadow-in2.png"
+      		border		= { 1, 1, 1, 1 }
+      		stretch		= TRUE
+    	}
+    }
+}
+
+class "*Thunar*" 	style "shadows2"
+
+################################################
+
+style "thunar-toolbar"  #= "toolbar"
+{
+	xthickness = 6
+	ythickness = 2
+}
+
+widget_class "*Thunar*Button*"	style "thunar-toolbar"
+
+################################################
+
+style "thunar-entry" = "default"
+{
+
+  GtkWidget::interior_focus	= 1
+
+  xthickness = 10
+  ythickness = 2
+
+    engine "pixmap"
+    {
+	# Text-entry
+	image
+	{
+		function	= SHADOW
+		detail		= "entry"
+		shadow		= IN
+		recolorable	= FALSE
+		file		= "Toolbar/location-entry.png"
+		border		= { 10,10,3,3 }
+		stretch		= TRUE
+	}
+    }
+}
+
+class "ThunarPathEntry"		style "thunar-entry"
+
+###############################################
+
+style "thunar-entry-right" = "default"
+{
+
+  xthickness = 6
+  ythickness = 3
+
+  GtkWidget::focus_padding 	= 0
+
+    engine "pixmap" 
+    {
+	# Toolbar arrow down (mouse over)
+	image
+       	{
+       		function	= ARROW
+       		recolorable	= TRUE
+       		state		= NORMAL
+       		overlay_file	= "Arrows/spot.png"
+       		overlay_stretch	= FALSE
+       		arrow_direction	= DOWN
+       	}
+
+	image
+       	{
+		function	= ARROW
+       		recolorable	= TRUE
+       		state		= PRELIGHT
+       		overlay_file	= "Arrows/spot.png"
+       		overlay_stretch	= FALSE
+       		arrow_direction	= DOWN
+       	}
+
+	image
+       	{
+       		function	= ARROW
+       		recolorable	= TRUE
+       		state		= ACTIVE
+       		overlay_file	= "Arrows/spot.png"
+       		overlay_stretch	= FALSE
+       		arrow_direction	= DOWN
+       	}
+    }
+}
+
+widget_class "*ThunarWindow*ThunarLocationEntry.GtkToggleButton*" style "thunar-entry-right"
+
+############################################
+
+#style "thunar-icon-view-reduced-style"
+#{
+#
+#  font_name = "Lucida Grande Medium 10"
+#
+#  ThunarIconView::column-spacing 	= 60
+#  ThunarIconView::row-spacing 		= 19
+#
+#}
+#
+#class "ThunarIconView" style "thunar-icon-view-reduced-style"
+

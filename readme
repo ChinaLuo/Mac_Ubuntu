@@ -1,0 +1,113 @@
+
+Mac_Ubuntu 
+
+Version: 1.0
+Project page: 
+Gnome-Look: 
+Author: chinesedragon, luoshupeng
+Email: luoshupeng@gmail.com
+Homepage: http://my.oschina.net/chinesedragon/blog
+
+Copyright (c) 2012 luoshupeng
+
+MAC_UBUNTU - Mac OS X Transformation Pack Based On Macbuntu.
+Similar to Mac4Lin but dedicated to the Ubuntu Linux.
+It can also be used in other OS based on Debian/GTK.
+Package includes all necessary system components to mimic Mac OS X appearance on Ubuntu Linux.
+
+Include
+* Paw-OSX and Paw-Ubuntu Plymouth themes
+* Macbuntu sound theme
+* Macbuntu GTK theme based on GTK Leopard
+* Macbuntu-Icons based on Mac4Lin and Faenza Icons
+* Macbuntu-Cursors based on Shere Khan X
+* Mac OS X backgrounds
+* Mac OS X fonts
+
+
+Configuration
+* Metacity
+* Window theme
+* Backgrounds
+* Cursors
+* Icons
+* Top panel
+
+Featured
+* Firefox theme Vfox3_Basic
+* Firefox theme MacOSX
+* Thunderbird theme Leopard Mail-Default-Aqua
+* Chrome theme GTK Leopard Chrome Theme
+
+Attention!
+This is a Beta version, some things might not work properly.
+Script significantly changes the desktop.
+Not compatible with Ubuntu Netbook Edition.
+
+Running scripts with root privileges is dangerous, if you do not trust the software or you are unsure about the origin of this software, please do not install.
+Macbuntu guarantee the safe code only if the application comes from this address 
+
+Note!
+This scripts will do not set the Mac OS X backgrounds correctly, You should do it yourself manually. But i copyed the backgrouns image to /usr/share/backgrounds/, you can choose backgrounds images via 
+
+== Install ==
+
+1. How to install Macbuntu?
+
+Attention!
+Prompt is displayed in this file, just to be able to quickly locate interesting commands.
+Please do not copy the prompt character $, because the terminal will display an error, for example:
+the displayed command is "$ cd /tmp/Mac_Ubuntu-12.04/" but the real is "cd /tmp/Mac_Ubuntu-12.04/" a command without prompt
+
+1.1 Clicker method
+
+Go to Macbuntu download page
+https://sourceforge.net/projects/macbuntu/files/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz/download
+and get the version 2.3 of Macbuntu 10.10.
+After the download has completed, extract the archive and run the install.sh file as a regular user (not root).
+The best way to do that, drag the install.sh file and drop it to opened terminal window.
+Press Enter.
+Follow the instructions
+
+1.2 Command line method
+
+Open a terminal and type the following commands:
+
+$ wget https://downloads.sourceforge.net/project/macbuntu/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz -O /tmp/Mac_Ubuntu-12.04.tar.gz
+$ tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp
+$ cd /tmp/Mac_Ubuntu-12.04/
+$ ./install.sh
+
+or
+ 
+$ wget https://downloads.sourceforge.net/project/macbuntu/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz -O /tmp/Macbuntu-10.10.tar.gz && tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp && cd /tmp/Mac_Ubuntu-12.04/ && ./install.sh
+
+Follow the instructions
+
+
+== Uninstall ==
+
+2. How to remove Macbuntu?
+
+2.1 Clicker method
+
+Open Nautilus, then go to your home directory and press Ctrl+H to show hidden files. Go to .macubuntu/12.04-1.0/ folder.
+After that run the uninstall.sh file as a regular user (not root).
+The best way to do that, drag the uninstall.sh file and drop it to opened terminal window.
+Press Enter.
+Follow the instructions
+
+2.2 Command line method
+
+Open a terminal and type the following commands:
+
+$ cd ~/.macubuntu/12.04-1.0/
+$ ./uninstall.sh
+
+or 
+
+$ cd ~/.macubuntu/12.04-1.0/ && ./uninstall.sh
+
+
+
+

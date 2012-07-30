@@ -1,0 +1,10 @@
+[Plymouth Theme]
+Name=Paw OS X
+Description=OS X like boot splash
+ModuleName=script
+
+[script]
+ImageDir=/lib/plymouth/themes/Paw-OSX
+ScriptFile=/lib/plymouth/themes/Paw-OSX/paw-osx.script
+
+

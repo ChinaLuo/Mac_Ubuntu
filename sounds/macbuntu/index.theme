@@ -1,0 +1,7 @@
+
+[Sound Theme]
+Name=Macbuntu
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo

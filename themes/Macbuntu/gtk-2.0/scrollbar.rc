@@ -1,0 +1,306 @@
+############# scrollbar ##########################
+
+style "scrollbar" 
+{
+
+  GtkRange::trough_border = 0  #1
+  GtkRange::slider_width = 15
+  GtkRange::stepper_size = 15  
+
+   
+#  GtkScrollbar::min_slider_length = 30
+#  GtkScrolledWindow::scrollbar-spacing	= 0
+#  GtkScrolledWindow::scrollbars-within-bevel = 1
+
+    engine "pixmap" 
+    {
+
+        image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            detail          = "trough"
+            file            = "Scrollbars/vertical_trough.png"
+            border          = { 0, 0, 30, 40 }
+            stretch         = TRUE
+            orientation     = VERTICAL
+        }
+
+        image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            detail          = "trough"
+            file            = "Scrollbars/horizontal_trough.png"
+            border          = { 30, 40, 0, 0 }
+            stretch         = TRUE
+            orientation     = HORIZONTAL
+        }
+
+############## sliders ########################################
+
+	image 
+	{
+            function        = SLIDER
+            recolorable     = TRUE
+            state           = INSENSITIVE
+            file            = "Scrollbars/slider_horizontal_insens.png"
+            border          = { 0, 0, 0, 0 }
+            stretch         = TRUE
+            orientation     = HORIZONTAL
+        }
+
+	image 
+	{
+            function        = SLIDER
+            recolorable     = TRUE
+            state           = INSENSITIVE
+            file            = "Scrollbars/slider_vertical_insens.png"
+            border          = { 0, 0, 7, 7 }
+            stretch         = TRUE
+            orientation     = VERTICAL
+        }
+        image
+	{
+            function        = SLIDER
+            recolorable     = TRUE
+            file            = "Scrollbars/flow-horz.png"
+            border          = { 0,0,0,0 }
+            stretch         	= FALSE
+            overlay_file	= "Scrollbars/slider_horizontal.png"
+            overlay_border	= { 8,8,0,0 }
+            overlay_stretch	= TRUE
+            orientation     = HORIZONTAL
+        }
+
+        image
+	{
+            function        = SLIDER
+            recolorable     = TRUE
+            file            = "Scrollbars/flow-vert.png"
+            border          = { 0,0,0,0 }
+            stretch         = FALSE
+            overlay_file	= "Scrollbars/slider_vertical.png"
+            overlay_border	= { 0,0,8,8 }
+            overlay_stretch	= TRUE
+            orientation     = VERTICAL
+	}
+
+
+      image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            state           = NORMAL
+            file            = "Scrollbars/null.png"
+            border          = { 0, 0, 0, 0 }
+            stretch         = TRUE
+        }
+
+        image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            state           = PRELIGHT
+            file            = "Scrollbars/null.png"
+            border          = { 0, 0, 0, 0 }
+            stretch         = TRUE
+	    orientation     = HORIZONTAL
+        }
+
+        image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            state           = ACTIVE
+            file            = "Scrollbars/null.png"
+            border          = { 0, 0, 0, 0 }
+            stretch         = TRUE
+        }
+
+	image 
+	{
+            function        = BOX
+            recolorable     = TRUE
+            state           = INSENSITIVE
+            file            = "Scrollbars/null.png"
+            border          = { 0, 0, 0, 0 }
+            stretch         = TRUE
+        }
+
+#################### steppers #################################3
+
+	image
+      	{
+		function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "Scrollbars/scroll_arrow_up.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+      	}
+
+	image
+      	{
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "Scrollbars/scroll_arrow_down.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+      	}
+
+	image
+      	{
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "Scrollbars/scroll_arrow_left.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "Scrollbars/scroll_arrow_right.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "Scrollbars/scroll_arrow_up_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+      }
+
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "Scrollbars/scroll_arrow_down_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "Scrollbars/scroll_arrow_left_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "Scrollbars/scroll_arrow_right_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+      }
+
+ 	image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "Scrollbars/scroll_arrow_up_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+      }
+
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		=INSENSITIVE
+	overlay_file	= "Scrollbars/scroll_arrow_down_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "Scrollbars/scroll_arrow_left_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "Scrollbars/scroll_arrow_right_prelight.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+      }
+
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "Scrollbars/scroll_arrow_up_push.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "Scrollbars/scroll_arrow_down_push.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "Scrollbars/scroll_arrow_left_push.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+      }
+    image
+      {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "Scrollbars/scroll_arrow_right_push.png"
+	overlay_border	= { 0, 0, 0, 0 }
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+      }
+
+}
+}
+
+class "GtkScrollbar"   style "scrollbar"
+#widget_class "*Scrollbar" style "scrollbar"
+

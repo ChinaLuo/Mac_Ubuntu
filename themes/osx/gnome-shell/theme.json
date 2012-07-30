@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Elementary-3.2", 
+   "author": "Half-Left", 
+   "version": "1.0",
+   "type":   "custom",
+   "thumbnail": "preview-elementary.jpg", 
+   "url": "http://gnome-shell.deviantart.com/" 
+    }
+}

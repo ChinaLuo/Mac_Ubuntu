@@ -1,0 +1,66 @@
+######### nautilus toolbar tweaks ############
+
+style "entry-nautilus"
+{
+
+  GtkWidget::interior_focus	= 0
+
+  xthickness = 8
+  ythickness = 2
+
+    engine "pixmap"
+    {
+	# Text-entry
+    	image
+    	{
+      		function	= FOCUS
+      		recolorable	= TRUE
+      		file		= "Toolbar/location-entry-focus.png"
+      		border		= { 10,10,3,3 }
+      		stretch		= TRUE
+    	}	
+
+   	image
+    	{
+      		function	= BOX
+      		recolorable	= TRUE
+      		state		= NORMAL
+      		file		= "Toolbar/location-entry-focus.png"
+      		border		= { 10,10,3,3 }
+      		stretch		= TRUE
+    	}	
+
+	image
+	{
+		function	= SHADOW
+		detail		= "entry"
+		shadow		= IN
+		recolorable	= FALSE
+		file		= "Toolbar/location-entry.png"
+		border		= { 10,10,3,3 }
+		stretch		= TRUE
+	}
+    }
+}
+
+widget_class "*Nautilus*Toolbar*Entry*"	style "entry-nautilus"
+
+############################################
+
+style "nautilus-button" = "toolbar"
+{
+
+  #font_name 			= "Lucida Grande Medium 9"
+
+  fg[NORMAL] 			= "#000000"
+  text[NORMAL] 			= "#000000"
+  fg[PRELIGHT] 			= "#000000"	
+  fg[ACTIVE] 			= "#ffffff"
+
+  xthickness = 6
+  ythickness = 2
+
+}
+
+widget_class "*Nautilus*Button*"	style "nautilus-button"
+

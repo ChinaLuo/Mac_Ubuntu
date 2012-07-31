@@ -73,14 +73,14 @@ Follow the instructions
 
 Open a terminal and type the following commands:
 
-$ wget https://github.com/ChinaLuo/Mac_Ubuntu/downloads/Mac_Ubuntu-12.04.tar.gz -O /tmp/Mac_Ubuntu-12.04.tar.gz
+$ wget https://github.com/downloads/ChinaLuo/Mac_Ubuntu/Mac_Ubuntu-12.04.tar.gz -O /tmp/Mac_Ubuntu-12.04.tar.gz
 $ tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp
 $ cd /tmp/Mac_Ubuntu-12.04/
 $ ./install.sh
 
 or
  
-$ wget https://github.com/ChinaLuo/Mac_Ubuntu/downloads/Mac_Ubuntu-12.04.tar.gz -O /tmp/Macbuntu-10.10.tar.gz && tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp && cd /tmp/Mac_Ubuntu-12.04/ && ./install.sh
+$ wget https://github.com/downloads/ChinaLuo/Mac_Ubuntu/Mac_Ubuntu-12.04.tar.gz -O /tmp/Macbuntu-10.10.tar.gz && tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp && cd /tmp/Mac_Ubuntu-12.04/ && ./install.sh
 
 Follow the instructions
 

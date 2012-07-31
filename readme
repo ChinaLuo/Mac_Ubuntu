@@ -48,7 +48,7 @@ Running scripts with root privileges is dangerous, if you do not trust the softw
 Macbuntu guarantee the safe code only if the application comes from this address 
 
 Note!
-This scripts will do not set the Mac OS X backgrounds correctly, You should do it yourself manually. But i copyed the backgrouns image to /usr/share/backgrounds/, you can choose backgrounds images via 
+This scripts will do not set the Mac OS X backgrounds correctly, You should do it yourself manually. But i copyed the backgrouns image to /usr/share/backgrounds/, you can choose backgrounds images via "system settings -> appearance" or other methods.
 
 == Install ==
 
@@ -62,8 +62,8 @@ the displayed command is "$ cd /tmp/Mac_Ubuntu-12.04/" but the real is "cd /tmp/
 1.1 Clicker method
 
 Go to Macbuntu download page
-https://sourceforge.net/projects/macbuntu/files/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz/download
-and get the version 2.3 of Macbuntu 10.10.
+https://github.com/ChinaLuo/Mac_Ubuntu/downloads
+and get the version 1.0 of Mac_Ubuntu 12.04.
 After the download has completed, extract the archive and run the install.sh file as a regular user (not root).
 The best way to do that, drag the install.sh file and drop it to opened terminal window.
 Press Enter.
@@ -73,14 +73,14 @@ Follow the instructions
 
 Open a terminal and type the following commands:
 
-$ wget https://downloads.sourceforge.net/project/macbuntu/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz -O /tmp/Mac_Ubuntu-12.04.tar.gz
+$ wget https://github.com/ChinaLuo/Mac_Ubuntu/downloads/Mac_Ubuntu-12.04.tar.gz -O /tmp/Mac_Ubuntu-12.04.tar.gz
 $ tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp
 $ cd /tmp/Mac_Ubuntu-12.04/
 $ ./install.sh
 
 or
  
-$ wget https://downloads.sourceforge.net/project/macbuntu/macbuntu-10.10/v2.3/Macbuntu-10.10.tar.gz -O /tmp/Macbuntu-10.10.tar.gz && tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp && cd /tmp/Mac_Ubuntu-12.04/ && ./install.sh
+$ wget https://github.com/ChinaLuo/Mac_Ubuntu/downloads/Mac_Ubuntu-12.04.tar.gz -O /tmp/Macbuntu-10.10.tar.gz && tar xzvf /tmp/Mac_Ubuntu-12.04.tar.gz -C /tmp && cd /tmp/Mac_Ubuntu-12.04/ && ./install.sh
 
 Follow the instructions
 

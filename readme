@@ -2,7 +2,7 @@
 Mac_Ubuntu 
 
 Version: 1.0
-Project page: 
+Project page: https://github.com/ChinaLuo/Mac_Ubuntu
 Gnome-Look: 
 Author: chinesedragon, luoshupeng
 Email: luoshupeng@gmail.com
@@ -45,7 +45,7 @@ Script significantly changes the desktop.
 Not compatible with Ubuntu Netbook Edition.
 
 Running scripts with root privileges is dangerous, if you do not trust the software or you are unsure about the origin of this software, please do not install.
-Macbuntu guarantee the safe code only if the application comes from this address 
+Macbuntu guarantee the safe code only if the application comes from this address https://github.com/ChinaLuo/Mac_Ubuntu
 
 Note!
 This scripts will do not set the Mac OS X backgrounds correctly, You should do it yourself manually. But i copyed the backgrouns image to /usr/share/backgrounds/, you can choose backgrounds images via "system settings -> appearance" or other methods.
